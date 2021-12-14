@@ -193,6 +193,6 @@ client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #F8F8F2
 
 for_window [class=.*] border pixel 0 
-gaps inner 10
+gaps inner 40
 
 exec_always --no-startup-id $HOME/.dotfiles/scripts/change_wallpaper.sh
