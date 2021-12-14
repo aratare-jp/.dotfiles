@@ -9,3 +9,6 @@ ln -s $(pwd)/.config/polybar ~/.config/polybar
 rm -rf ~/.config/dunst
 ln -s $(pwd)/.config/dunst ~/.config/dunst
 
+rm -rf ~/.config/rofi
+ln -s $(pwd)/.config/rofi ~/.config/rofi
+
