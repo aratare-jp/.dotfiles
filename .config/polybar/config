@@ -57,6 +57,9 @@ label-focused-padding = 2
 label-unfocused = %index%
 label-unfocused-background = ${colours.background}
 label-unfocused-padding = 2
+label-visible = %index%
+label-visible-background = ${colours.background}
+label-visible-padding = 2
 reverse-scroll = false
 
 [module/cpu]
