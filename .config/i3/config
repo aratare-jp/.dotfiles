@@ -168,6 +168,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 bindsym $mod+d exec "rofi -show drun"
 bindsym $mod+shift+d exec "rofi -show run"
 bindsym $mod+ctrl+l exec "convert ~/Pictures/4k/japan-sunset-purple-evening-4k-5m.jpg RGB:- | i3lock --raw 3840x2160:rgb --image /dev/stdin && echo mem > /sys/power/state"
+bindsym $mod+Shift+p exec scrot $HOME/Pictures/`date +%Y-%m-%d_%H:%M:%S`.png
+
 # class                 border  bground text    indicator child_border
 client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
 client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
@@ -178,7 +180,7 @@ client.background       #F8F8F2
 
 for_window [class="Yad" title="yad-calendar"] floating enable
 for_window [class=.*] border pixel 0 
-gaps inner 40
+gaps inner 20
 
 exec_always --no-startup-id killall -q change_wallpaper 
 exec_always --no-startup-id $HOME/.dotfiles/scripts/change_wallpaper.sh
