@@ -60,6 +60,9 @@ label-unfocused-padding = 2
 label-visible = %index%
 label-visible-background = ${colours.background}
 label-visible-padding = 2
+label-urgent = %index%
+label-urgent-background = ${colours.background}
+label-urgent-padding = 2
 reverse-scroll = false
 
 [module/cpu]
