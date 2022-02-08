@@ -1,5 +1,3 @@
-
-
 [global]
     width = 330
     height = 150
@@ -10,6 +8,7 @@
     padding = 3
     separator_height = 5
     separator_color = "#00000000"
+    sticky_history = false
 
 [urgency_low]
     background = "#44475a"
