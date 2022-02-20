@@ -39,7 +39,7 @@ locale = ja_JP.UTF-8
 
 [bar/main]
 inherit = bar/base
-modules-center = i3 cpu memory pulseaudio eth-down eth-up date time powermenu
+modules-center = i3 cpu memory pulseaudio eth-down eth-up date time powermenu 
 tray-position=right
 
 [module/base]
@@ -85,7 +85,7 @@ label = " %percentage_used:3%%"
 [module/date]
 type = internal/date
 inherit = module/base
-date = "%A %d-%m-%Y"
+date = "%A %d/%m/%Y"
 format-prefix-foreground = ${colours.pink}
 format-prefix = 
 label = " %date%"
@@ -177,11 +177,30 @@ menu-0-2-background= ${colours.background}
 menu-0-2-foreground = ${colours.green}
 menu-0-2-padding = 1
 
-[module/popup-calendar]
-type = custom/script
-exec = ~/.config/polybar/popup-calendar.sh
-interval = 5
-click-left = ~/.config/polybar/popup-calendar.sh --popup &
+[module/poweroff]
+type = custom/text
+content = 
+content-padding = 1
+content-font = 2
+content-background = ${colours.red}
+click-left = shutdown now
+
+[module/reboot]
+type = custom/text
+content = 
+content-padding = 1
+content-font = 2
+content-background = ${colours.orange}
+click-left = reboot
+
+[module/sleep]
+type = custom/text
+content = 
+content-padding = 1
+content-font = 2
+content-background = ${colours.purple}
+click-left = systemctl suspend
+
 
 [settings]
 screenchange-reload = true
