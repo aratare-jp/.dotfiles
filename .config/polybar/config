@@ -28,12 +28,14 @@ cursor-click = pointer
 font-0 = JetBrains Mono Nerd Font:size=10;4
 font-1 = JetBrains Mono Nerd Font:size=16;7
 font-2 = Noto Color Emoji:scale=12;5
+font-3 = Noto Sans JP:size=10;4
 border-top-color = ${colours.transparent}
 border-bottom-color = ${colours.transparent}
 border-left-color = ${colours.transparent}
 border-right-color = ${colours.transparent}
 border-top-size = 0
 border-bottom-size = 20
+locale = ja_JP.UTF-8
 
 [bar/main]
 inherit = bar/base
@@ -83,10 +85,11 @@ label = " %percentage_used:3%%"
 [module/date]
 type = internal/date
 inherit = module/base
-date = "%a %d-%m-%Y"
+date = "%A %d-%m-%Y"
 format-prefix-foreground = ${colours.pink}
 format-prefix = 
 label = " %date%"
+label-font = 0
 
 [module/time]
 type = internal/date
