@@ -37,7 +37,7 @@ border-bottom-size = 20
 
 [bar/main]
 inherit = bar/base
-modules-center = i3 cpu memory pulseaudio eth-down eth-up date time powermenu
+modules-center = i3 cpu memory pulseaudio eth-down eth-up date powermenu
 tray-position=right
 
 [module/base]
@@ -84,17 +84,19 @@ label = " %percentage_used:3%%"
 type = internal/date
 inherit = module/base
 date = "%a %d-%m-%Y"
+time = "%H:%M"
 format-prefix-foreground = ${colours.pink}
 format-prefix = 
-label = " %date%"
+label = " %date% | %time%"
+click-left = ~/.config/polybar/popup-calendar.sh --popup &
 
 [module/time]
 type = internal/date
 inherit = module/base
 time = "%H:%M"
-format-prefix-foreground = ${colours.yellow}
-format-prefix = 
-label = " %time%"
+format-prefix-foreground = ${colours.pink}
+format-prefix = 
+label = "%time%"
 
 [module/pulseaudio]
 type = internal/pulseaudio
