@@ -96,7 +96,7 @@ type = internal/date
 inherit = module/base
 time = "%H:%M"
 format-prefix-foreground = ${colours.yellow}
-format-prefix = 
+format-prefix = 
 label = " %time%"
 
 [module/pulseaudio]
