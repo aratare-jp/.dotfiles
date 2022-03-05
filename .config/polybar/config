@@ -85,7 +85,7 @@ label = " %percentage_used:3%%"
 [module/date]
 type = internal/date
 inherit = module/base
-date = "%A %d/%m/%Y"
+date = "%A %Y年%m月%d日"
 format-prefix-foreground = ${colours.pink}
 format-prefix = 
 label = "%{A1:flatpak run org.gnome.Calendar:} %date%%{A}"
