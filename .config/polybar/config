@@ -35,11 +35,13 @@ border-left-color = ${colours.transparent}
 border-right-color = ${colours.transparent}
 border-top-size = 0
 border-bottom-size = 20
+border-left-size = 30
 locale = ja_JP.UTF-8
 
 [bar/main]
 inherit = bar/base
-modules-center = i3 cpu memory pulseaudio eth-down eth-up date time powermenu 
+modules-left = i3
+modules-center = cpu memory pulseaudio eth-down eth-up date time powermenu 
 tray-position=right
 tray-scale=1
 tray-maxsize=30
