@@ -1,5 +1,5 @@
 set $mod Mod4
-font pango:JetBrains Mono Nerd Font 13
+font pango:JetBrainsMonoNL Nerd Font Mono 13
 
 exec_always --no-startup-id picom
 
@@ -157,5 +157,5 @@ for_window [class=.*] border pixel 0
 for_window [class=.*] title_format "<b>%title</b>"
 gaps inner 20
 
-#exec_always --no-startup-id killall -q change_wallpaper 
-#exec_always --no-startup-id $HOME/.dotfiles/scripts/change_wallpaper.sh
+exec_always --no-startup-id killall -q change_wallpaper.sh
+exec_always --no-startup-id $HOME/.dotfiles/scripts/change_wallpaper.sh
