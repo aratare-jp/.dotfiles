@@ -9,8 +9,6 @@ bindsym $mod+f fullscreen toggle
 # launcher
 bindsym $mod+d exec "rofi -show drun"
 bindsym $mod+shift+d exec "rofi -show run"
-#bindsym $mod+ctrl+l exec "convert ~/Pictures/4k/japan-sunset-purple-evening-4k-5m.jpg RGB:- | i3lock --raw 3840x2160:rgb --image /dev/stdin && echo mem > /sys/power/state"
-#bindsym $mod+Shift+p exec scrot $HOME/Pictures/`date +%Y-%m-%d_%H:%M:%S`.png
 
 # change focus
 bindsym $mod+h focus left
@@ -85,6 +83,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym j resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
