@@ -1,2 +1,2 @@
-exec --no-startup-id xset 300
+exec_always --no-startup-id xset 300
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
