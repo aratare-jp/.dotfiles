@@ -1,3 +1,3 @@
 #!/bin/bash
 
-curl -s "wttr.in/Fukuoka?format=1"
+curl -s 'wttr.in/Fukuoka?format=%c%t'
