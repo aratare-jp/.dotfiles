@@ -3,5 +3,3 @@ set $mod Mod4
 include ~/.config/i3/autostart/*.conf
 include ~/.config/i3/config.d/*.conf
 
-for_window [class=.*] border pixel 0 
-gaps inner 20
