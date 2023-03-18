@@ -1,17 +1,7 @@
 set $mod Mod4
 
-include ~/.config/i3/autostart/display
-include ~/.config/i3/autostart/desktop_entries
-include ~/.config/i3/autostart/lock_screen
-include ~/.config/i3/autostart/network
-include ~/.config/i3/autostart/volume
-include ~/.config/i3/autostart/input_method
-include ~/.config/i3/autostart/polybar
-include ~/.config/i3/autostart/wallpaper
-include ~/.config/i3/autostart/ssh_agent
-
-include ~/.config/i3/config.d/key_binding
-include ~/.config/i3/config.d/float
+include ~/.config/i3/autostart/*.conf
+include ~/.config/i3/config.d/*.conf
 
 for_window [class=.*] border pixel 0 
 gaps inner 20

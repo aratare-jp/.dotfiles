@@ -1,2 +1,0 @@
-exec_always --no-startup-id xset s 300
-exec_always --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/scripts/lock_screen.sh
