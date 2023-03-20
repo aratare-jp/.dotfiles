@@ -17,6 +17,10 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+export GTK_IM_MODULE=fcitx5
+export QT_IM_MODULE=fcitx5
+export XMODIFIERS=@im=fcitx5
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -120,6 +124,8 @@ alias ls=lsd
 alias cat=bat
 alias ping=prettyping
 alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias copy='xclip -sel clip'
+alias vim='nvim'
 
 # This speeds up pasting w/ autosuggest
 pasteinit() {
@@ -137,3 +143,7 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
