@@ -51,3 +51,15 @@ vnoremap <C-S-J> :m '>+1<CR>gv=gv
 " New line
 nnoremap <C-Enter> <ESC>o<ESC>
 nnoremap <S-Enter> <ESC>O<ESC>
+
+" Split panes
+nnoremap <C-p>% <ESC>:split<CR>
+nnoremap <C-p>" <ESC>:vsplit<CR>
+nnoremap <A-S-H> <C-W>H
+nnoremap <A-S-J> <C-W>J
+nnoremap <A-S-K> <C-W>K
+nnoremap <A-S-L> <C-W>L
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
