@@ -34,9 +34,9 @@ set backupdir=~/.cache/vim  " Directory to store backup files.
 set rnu                     " Relative number
 
 " Alt+F1 = NerdTree
-nnoremap <F49> :NERDTreeToggle<CR>
-inoremap <F49> :NERDTreeToggle<CR>
-vnoremap <F49> :NERDTreeToggle<CR>
+nnoremap <M-1> :NERDTreeToggle<CR>
+inoremap <M-1> :NERDTreeToggle<CR>
+vnoremap <M-1> :NERDTreeToggle<CR>
 
 " Alt+S = Jump
 map <M> <Plug>(easymotion-prefix)
@@ -55,10 +55,14 @@ nnoremap <S-Enter> <ESC>O<ESC>
 " Split panes
 nnoremap <C-p>% <ESC>:split<CR>
 nnoremap <C-p>" <ESC>:vsplit<CR>
+
+" Move panes
 nnoremap <A-S-H> <C-W>H
 nnoremap <A-S-J> <C-W>J
 nnoremap <A-S-K> <C-W>K
 nnoremap <A-S-L> <C-W>L
+
+" Select panes
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
