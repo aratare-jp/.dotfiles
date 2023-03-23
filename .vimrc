@@ -33,14 +33,15 @@ set noswapfile              " disable creating swap file
 set backupdir=~/.cache/vim  " Directory to store backup files.
 set rnu                     " Relative number
 
-" Alt+F1 = NerdTree
-nnoremap <M-1> :NERDTreeToggle<CR>
-inoremap <M-1> :NERDTreeToggle<CR>
-vnoremap <M-1> :NERDTreeToggle<CR>
+let mapleader="`"
 
-" Alt+S = Jump
-map <M> <Plug>(easymotion-prefix)
-nmap <M-s> <Plug>(easymotion-overwin-f2)
+" NerdTree
+nnoremap <F1> :NERDTreeToggle<CR>
+inoremap <F1> :NERDTreeToggle<CR>
+vnoremap <F1> :NERDTreeToggle<CR>
+
+" Easymotion
+nmap <Leader>s <Plug>(easymotion-overwin-f2)
 
 " Move line up/down
 nnoremap <C-S-K> <ESC>:m .-2<CR>
