@@ -4,6 +4,7 @@ plugins=(
   git
   fast-syntax-highlighting
   zsh-autosuggestions
+  fzf-tab
 )
 
 source $ZSH/oh-my-zsh.sh
