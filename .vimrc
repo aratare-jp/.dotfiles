@@ -6,6 +6,7 @@ Plug 'miyakogi/conoline.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'mhinz/vim-startify'
 call plug#end()
 
 let g:conoline_auto_enable = 1
