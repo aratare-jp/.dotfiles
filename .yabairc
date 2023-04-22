@@ -19,7 +19,7 @@ yabai -m config mouse_follows_focus          off
 yabai -m config focus_follows_mouse          off
 yabai -m config window_origin_display        cursor
 yabai -m config window_placement             second_child
-yabai -m config window_topmost               on
+yabai -m config window_topmost               off
 yabai -m config window_shadow                float
 yabai -m config window_opacity               off
 yabai -m config window_opacity_duration      0.0
@@ -65,4 +65,12 @@ yabai -m rule --add app='IntelliJ IDEA' title='Run/Debug Configurations' manage=
 yabai -m rule --add app='IntelliJ IDEA' title='Go To Line:Column' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Push Commits' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Keyboard Shortcut' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Update Project' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Create New branch' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Rollback Changes' manage=off
+
+yabai -m rule --add title='Okta Verify' manage=off
+
+yabai -m rule --add title='Spotify' manage=off
+
 echo "yabai configuration loaded.."
