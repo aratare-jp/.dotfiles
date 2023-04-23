@@ -68,6 +68,7 @@ yabai -m rule --add app='IntelliJ IDEA' title='Keyboard Shortcut' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Update Project' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Create New branch' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Rollback Changes' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Add File to Git' manage=off
 
 yabai -m rule --add title='Okta Verify' manage=off
 
