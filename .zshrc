@@ -24,7 +24,7 @@ else
 fi
 
 # Load local modules
-if [[ -f ~/.local.zsh.d ]]; then
+if [[ -d ~/.local.zsh.d ]]; then
     for f in $(ls -d ~/.local.zsh.d/*); do source $f; done 
 fi
 
