@@ -72,6 +72,4 @@ yabai -m rule --add app='IntelliJ IDEA' title='Add File to Git' manage=off
 
 yabai -m rule --add title='Okta Verify' manage=off
 
-yabai -m rule --add title='Spotify' manage=off
-
 echo "yabai configuration loaded.."
