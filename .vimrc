@@ -41,7 +41,7 @@ set rnu                     " Relative number
 nnoremap <Space> <Nop>
 let mapleader=" "
 
-nnoremap <Leader>r :so %<CR> | echo 'Reloaded'
+nnoremap <Leader>r :so ~/.vimrc<CR> | echo 'Reloaded'
 
 let g:smoothie_no_default_mappings = v:true
 nnoremap <C-K> <cmd>call smoothie#do("\<C-U>") <CR>
@@ -50,7 +50,7 @@ nnoremap <C-J> <cmd>call smoothie#do("\<C-D>") <CR>
 vnoremap <C-J> <cmd>call smoothie#do("\<C-D>") <CR>
 
 nnoremap <C-D> ddup
-vnoremap <C-D> yp
+vnoremap <C-D> yP
 
 " NerdTree
 nnoremap <F1> :NERDTreeToggle<CR>
