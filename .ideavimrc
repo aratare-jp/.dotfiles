@@ -1,0 +1,10 @@
+" Common configuration
+source ~/.commonvimrc
+
+" Configuration
+set NERDTree
+set easymotion
+set clipboard+=ideaput
+
+" Reload config
+nnoremap <Leader>r :so ~/.ideavimrc<CR> | echo 'Reloaded'

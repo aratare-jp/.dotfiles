@@ -1,0 +1,34 @@
+" Configuration
+set ignorecase              " case insensitive 
+set hlsearch                " highlight search 
+set incsearch               " incremental search
+set number                  " add line numbers
+set clipboard=unnamedplus   " using system clipboard
+set rnu                     " Relative number
+
+" Leader
+nnoremap <Space> <Nop>
+let mapleader=" "
+
+" Duplicate
+nnoremap <C-D> ddup
+vnoremap <C-D> yP
+
+" NerdTree
+nnoremap <F1> :NERDTreeToggle<CR>
+vnoremap <F1> :NERDTreeToggle<CR>
+inoremap <F1> <ESC>:NERDTreeToggle<CR>
+ 
+" Easymotion
+nmap <Leader>j <Plug>(easymotion-bd-f)
+ 
+" Move line up/down
+nnoremap <C-S-K> <ESC>:m .-2<CR>
+nnoremap <C-S-J> <ESC>:m .+1<CR>
+vnoremap <C-S-K> :m '<-2<CR>gv=gv
+vnoremap <C-S-J> :m '>+1<CR>gv=gv
+ 
+" New line
+nnoremap <C-Enter> <ESC>o<ESC>
+nnoremap <S-Enter> <ESC>O<ESC>
+
