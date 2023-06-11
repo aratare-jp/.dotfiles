@@ -10,6 +10,7 @@ Plug 'mhinz/vim-startify'
 Plug 'psliwka/vim-smoothie'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'kdheepak/lazygit.nvim'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 " Load common configuration

@@ -32,3 +32,10 @@ vnoremap <C-S-J> :m '>+1<CR>gv=gv
 nnoremap <C-Enter> <ESC>o<ESC>
 nnoremap <S-Enter> <ESC>O<ESC>
 
+" Surround
+let g:surround_no_mappings = 1
+nmap <Leader>sc <Plug>Csurround
+nmap <Leader>sd <Plug>Dsurround
+nmap <Leader>sa <Plug>Ysurroundiw
+vmap <Leader>sa <Plug>VSurround
+
