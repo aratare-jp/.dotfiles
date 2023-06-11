@@ -39,3 +39,7 @@ nmap <Leader>sd <Plug>Dsurround
 nmap <Leader>sa <Plug>Ysurroundiw
 vmap <Leader>sa <Plug>VSurround
 
+" Remove empty lines
+nnoremap <Leader>delk d?.<CR>:noh<CR>
+nnoremap <Leader>delj d/.<CR>:noh<CR>
+
