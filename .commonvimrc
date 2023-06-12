@@ -1,5 +1,6 @@
 " Configuration
-set ignorecase              " case insensitive 
+set ignorecase              " case insensitive
+set smartcase               " smart casing when searching
 set hlsearch                " highlight search 
 set incsearch               " incremental search
 set number                  " add line numbers
@@ -33,11 +34,11 @@ nnoremap <C-Enter> <ESC>o<ESC>
 nnoremap <S-Enter> <ESC>O<ESC>
 
 " Surround
-let g:surround_no_mappings = 1
-nmap <Leader>sc <Plug>Csurround
-nmap <Leader>sd <Plug>Dsurround
-nmap <Leader>sa <Plug>Ysurroundiw
-vmap <Leader>sa <Plug>VSurround
+" let g:surround_no_mappings = 1
+nmap <Leader>sc cs
+nmap <Leader>sd ds
+nmap <Leader>sa ysiw
+vmap <Leader>sa S
 
 " Remove empty lines
 nnoremap <Leader>delk d?.<CR>:noh<CR>

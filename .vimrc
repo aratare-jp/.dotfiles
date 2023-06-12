@@ -11,6 +11,7 @@ Plug 'psliwka/vim-smoothie'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'kdheepak/lazygit.nvim'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-abolish'
 call plug#end()
 
 " Load common configuration
