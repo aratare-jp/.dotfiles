@@ -64,9 +64,11 @@ nnoremap <Leader>" <ESC>:vsplit<CR>
 " nnoremap <C-l> <C-w>l
 
 " Multi cursor
+nnoremap <unique> <Leader>$k <Nop>
+nnoremap <unique> <Leader>$j <Nop>
 let g:VM_maps = {}
-let g:VM_maps['Add Cursor Up'] = '<M-S-K>'
-let g:VM_maps['Add Cursor Down'] = '<M-S-J>'
+let g:VM_maps['Add Cursor Up'] = '<Space>$k'
+let g:VM_maps['Add Cursor Down'] = '<Space>$j'
 
 " LazyGit
 nnoremap <silent> <F10> :LazyGit<CR>
