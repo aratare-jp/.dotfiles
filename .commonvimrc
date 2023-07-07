@@ -44,3 +44,5 @@ vmap <Leader>sa S
 nnoremap <Leader>delk d?.<CR>:noh<CR>
 nnoremap <Leader>delj d/.<CR>:noh<CR>
 
+" Add new line
+nnoremap <Leader>sn <ESC>i<CR><ESC>

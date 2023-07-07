@@ -12,6 +12,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'kdheepak/lazygit.nvim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-abolish'
+Plug 'git@github.com:hashivim/vim-terraform.git'
 call plug#end()
 
 " Load common configuration
@@ -64,8 +65,8 @@ nnoremap <Leader>" <ESC>:vsplit<CR>
 " nnoremap <C-l> <C-w>l
 
 " Multi cursor
-nnoremap <unique> <Leader>$k <Nop>
-nnoremap <unique> <Leader>$j <Nop>
+nnoremap <Leader>$k <Nop>
+nnoremap <Leader>$j <Nop>
 let g:VM_maps = {}
 let g:VM_maps['Add Cursor Up'] = '<Space>$k'
 let g:VM_maps['Add Cursor Down'] = '<Space>$j'
@@ -73,3 +74,49 @@ let g:VM_maps['Add Cursor Down'] = '<Space>$j'
 " LazyGit
 nnoremap <silent> <F10> :LazyGit<CR>
 
+function! ShowFindReplacePopup()
+  " Calculate the width and height of the popup window
+  let width = 40
+  let height = 5
+
+  " Calculate the centered position of the popup window
+  let row = (winheight(0) - height) / 2
+  let col = (winwidth(0) - width) / 2
+
+  " Create a new buffer for the popup window
+  let buf_id = nvim_create_buf(0, 1)
+
+  " Set the contents of the buffer
+  call nvim_buf_set_lines(buf_id, 0, -1, 0, ['Find:', '', 'Replace:', ''])
+
+  " Create a new floating window for the popup
+  let win_id = nvim_open_win(buf_id, 1, {
+        \ 'relative': 'editor',
+        \ 'row': row,
+        \ 'col': col,
+        \ 'width': width,
+        \ 'height': height,
+        \ 'style': 'minimal',
+        \ 'border': 'rounded',
+        \ })
+
+  " Set the buffer options for the popup window
+  call nvim_buf_set_option(buf_id, 'buftype', 'nofile')
+  call nvim_buf_set_option(buf_id, 'bufhidden', 'wipe')
+  call nvim_buf_set_option(buf_id, 'swapfile', 0)
+  setlocal wrap
+  setlocal filetype=vim
+
+  " Position the cursor on the first input field
+  call win_execute(win_id, 'normal! 1G')
+
+  " Retrieve and echo back the user input
+  let find = input('Enter search text: ')
+  let replace = input('Enter replacement text: ')
+  echo 'You entered: ' . find . ' for find and ' . replace . ' for replace.'
+
+  " Close the popup window
+  call win_close(win_id)
+endfunction
+
+command! FindReplacePopup call ShowFindReplacePopup()
