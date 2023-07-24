@@ -51,9 +51,9 @@ yabai -m config focus_follows_mouse off
 # float system preferences
 yabai -m rule --add app='^System Information$' manage=off
 yabai -m rule --add app='^System Preferences$' manage=off
-yabai -m rule --add title='Preferences$' manage=off
-yabai -m rule --add title='システム環境設定' manage=off
-yabai -m rule --add title='システム設定' manage=off
+yabai -m rule --add app='Preferences$' manage=off
+yabai -m rule --add app='システム環境設定' manage=off
+yabai -m rule --add app='システム設定' manage=off
 
 # float settings windows
 yabai -m rule --add title='Settings$' manage=off
@@ -70,6 +70,7 @@ yabai -m rule --add app='IntelliJ IDEA' title='Update Project' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Create New branch' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Rollback Changes' manage=off
 yabai -m rule --add app='IntelliJ IDEA' title='Add File to Git' manage=off
+yabai -m rule --add app='JetBrains Toolbox' manage=off
 
 yabai -m rule --add title='Okta Verify' manage=off
 
