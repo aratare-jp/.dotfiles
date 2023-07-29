@@ -13,6 +13,7 @@ Plug 'kdheepak/lazygit.nvim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-abolish'
 Plug 'git@github.com:hashivim/vim-terraform.git'
+Plug 'git@github.com:terryma/vim-expand-region.git'
 call plug#end()
 
 " Load common configuration

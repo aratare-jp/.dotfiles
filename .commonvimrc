@@ -49,8 +49,6 @@ nnoremap <Leader>sn <ESC>i<CR><ESC>
 
 " Delete until
 function! DeleteSurroundingCharacters(char)
-  let search_pattern = '\V' . escape(a:char, '\')
-  let delete_command = 'normal! T' . search_pattern . 'vf"' . search_pattern . 'ld'
   let delete_command = 'normal! dT' . a:char . 'dt' . a:char
   execute delete_command
 endfunction
